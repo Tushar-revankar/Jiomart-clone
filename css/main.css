@@ -1,0 +1,73 @@
+/* main */
+
+/* hero banner */
+
+.scroll-banner {
+    margin-top: 150px;
+    position: relative;
+}
+
+.scroll-banner .scroll-banner-container {
+    margin: 0 158px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.scroll-banner .scroll-banner-container img {
+    width: 384px;
+    height: 223px;
+    border-radius: 24px;
+    flex-shrink: 0;
+}
+
+/* Navigation buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 110px;
+}
+
+.next-btn {
+    right: 110px;
+}
+
+/* Dots navigation */
+.scroll-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
