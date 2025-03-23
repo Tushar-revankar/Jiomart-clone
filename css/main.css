@@ -6,17 +6,87 @@
     margin-top: 150px;
 }
 
-.scroll-banner .scroll-banner-container {
+.scroll-banner-wrapper {
     margin: 0 158px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-banner .scroll-banner-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
-    overflow-x: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    user-select: none;
+    pointer-events: auto;
+}
+
+.scroll-banner .scroll-banner-container::-webkit-scrollbar {
+    display: none; 
 }
 
 .scroll-banner .scroll-banner-container img {
+    margin: 0px 8px;
     width: 384px;
     height: 223px;
     border-radius: 24px;
+    pointer-events: none;
+}
+
+.scroll-banner-wrapper:hover .scroll-arrow {
+    opacity: 1;
+}
+
+.scroll-arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+    opacity: 0;
+}
+
+.scroll-left {
+    left: 20px;
+}   
+
+.scroll-right {
+    right: 20px;
+}
+
+/* Navigation dots */
+
+.scroll-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #0066ff;
 }
