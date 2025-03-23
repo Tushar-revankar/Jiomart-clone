@@ -176,3 +176,19 @@
 .shop-categories img {
     height: 270px;
 }
+
+/* items scrollbar */
+
+.items-scrollbar {
+    margin-top: 48px;
+    background-color: #ddf8ff;
+    padding: 24px 0px;
+}
+
+.item-scrollbar-head {
+    margin: 0 158px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
