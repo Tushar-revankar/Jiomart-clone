@@ -192,3 +192,26 @@
     align-items: center;
     margin-bottom: 16px;
 }
+
+.item-scrollbar-container {
+    margin: 0 158px;
+}
+
+.product-card-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-card {
+    width: 184px;
+    background-color: #fff;
+    border-radius: 24px;
+    margin-right: 16px;
+    padding: 12px;
+}
+
+.product-card img {
+    width: 155px;
+    height: 155px;
+    object-fit: contain;
+}
