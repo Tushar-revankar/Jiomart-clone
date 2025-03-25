@@ -6,6 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollStep = 400;
     let autoScroll;
 
+    // Dropdown overlay functionality
+    const dropdownItems = document.querySelectorAll(".has-dropdown");
+    const mainOverlay = document.querySelector(".main-overlay");
+    dropdownItems.forEach(item => {
+        item.addEventListener("mouseenter", function() {
+            mainOverlay.style.display = "block";
+        });
+        item.addEventListener("mouseleave", function() {
+            mainOverlay.style.display = "none";
+        });
+    });
+
     function scrollLeft() {
         const isAtStart = scrollContainer.scrollLeft <= 10;
         if (isAtStart) {
