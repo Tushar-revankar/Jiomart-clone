@@ -250,6 +250,70 @@
     transition: width 0.3s ease;
 }
 
+/* ----- Grocery ----- */
+
+.nitem:hover > a::after,
+.nitem .g-dropdown:hover > a::after {
+    width: 100%; 
+}
+
+.g-dropdown {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f7f7f7; 
+    padding: 10px 0px 10px 10px;
+    width: 230px;
+    height: 450px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+}
+
+.g-dropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.nitem:hover .g-dropdown {
+    display: block;
+}
+
+.g-main {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.g-main-item {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.g-main-item a {
+    width: 100%;
+    color: #626262;
+    text-decoration: none;
+    display: flex;
+    padding: 6px 12px 6px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.g-main-item:hover{
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.g-main li:hover {
+    background-color: #cadfff; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 /* ----- All Categories ----- */
 
 .category {
