@@ -59,8 +59,10 @@ This project is a frontend implementation of JioMart, India's popular online sho
 
 ## Screenshots
 
+### Main Page
 ![Main Page](./images/screenshots/mainpage.png)
 
+### Dropdown Menu
 ![Dropdown Menu](./images/screenshots/dropdown.png)
 
 ## Future Improvements
