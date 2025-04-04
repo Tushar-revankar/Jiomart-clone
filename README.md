@@ -2,6 +2,8 @@
 
 A responsive and modern clone of JioMart's e-commerce website built with HTML, CSS, and JavaScript.
 
+[Live Demo](https://jiomart-clone-web.vercel.app/)
+
 ## Project Overview
 
 This project is a frontend implementation of JioMart, India's popular online shopping platform. The clone replicates the UI/UX of JioMart's website with responsive design and interactive elements.
