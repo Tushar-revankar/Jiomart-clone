@@ -34,12 +34,6 @@ jiomart-clone/
 │   ├── header.css      # Header styles
 │   └── main.css        # Main content styles
 ├── images/
-│   ├── electronics/    # Product images
-│   ├── favicon/        # Favicon icons
-│   ├── main-banner/    # Banner images
-│   ├── off-banner/     # Offer banner images
-│   ├── scroll-container/ # Carousel images
-│   └── sub-banner/     # Sub-banner images
 ├── js/
 │   └── main.js         # Main JavaScript functionality
 ├── index.html          # Main HTML file
